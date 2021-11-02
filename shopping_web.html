@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Food Store </title>
+		<meta name="viewpoint" content ="width=device-width, initial-scale ">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<link rel="stylesheet" type="text/css" href="shopping_web.css"/>
+		<link rel="stylesheet" type="text/css" href="lightslider.css"/>
+		<script src="Jquery.js"></script>
+		<script src="lightslider.js"></script>
+		<script src="http://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- ========Navigation====== -->
+
+		<nav>
+			<!-- <div class="social-call">
+				<div class ="social">
+					<a href="#" ><i class="fab fa-facebook-f"></i></a>
+					<a href="#" ><i class="fab fa-instagram"></i></a>
+					<a href="#" ><i class="fab fa-twitter"></i></a>
+				</div>
+				<div class ="phone">
+					<span> Hotline: +84 912 503 111 </span>
+				</div>
+			</div> -->
+
+			<div class="navigation">
+				<a href = "#" class="logo">
+					<img src="logo_banh.png" />
+				</a>
+
+				<div class="toggle">
+					
+				</div>
+
+				<ul class="menu">
+					<li> <a href="#"> Home </a></li>
+					<li> <a href="#categories"> Categories </a></li>
+					<li> <a href="#menu"> Main Menu </a>
+						<span class="sale-label">Sale</span>
+					</li>
+					
+					<li> <a href="#best"> Best-Seller </a></li>
+					<li> <a href="#footer"> Contact </a></li>
+				</ul>
+
+				<div class="right-menu">
+					<a href="javascript:void(0);" class="search">
+						<i class="fas fa-search"></i>
+					</a>
+					<a href="javascript:void(0);" class="user">
+						<i class="fas fa-user"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-shopping-cart">
+						<span class="num-cart-product">0</span>
+						</i>	
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ==========search-bar============ -->
+
+		<div class="search-bar">
+			<div class="search-input">
+				<input type="text" placeholder="Search For Product"/>
+
+				<a href="javascript:void(0);" class="search-cancel">
+					<i class="fas fa-times"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- ======login===== -->
+		<div class="form">
+			<div class="login-form">
+				<a href="javascript:void(0);" class="form-cancel">
+					<i class="fas fa-times"></i>
+				</a>
+
+
+				<strong> Log In </strong>
+				<form>
+					<input type="email" placeholder="Emailname@gmail.com" name="email" required>
+					<input type="password" placeholder="Enter your password" name="password" required>
+					<input type="submit" value="Log In">
+				</form>
+
+				<div class="form-btns">
+					<a href="#" class="forget"> Forget Your Password? </a>
+					<a href="javascript:void(0);" class="sign-up-btn"> Creata New Account </a>
+				</div>
+			</div>
+
+			<div class="sign-up-form">
+				<a href="javascript:void(0);" class="form-cancel">
+					<i class="fas fa-times"></i>
+				</a>
+
+
+				<strong> Sign Up </strong>
+				<form>
+					<input type="text" placeholder="Your Name" name="fullname" required>
+					<input type="email" placeholder="Emailname@gmail.com" name="email" required>
+					<input type="password" placeholder="Enter your password" name="password" required>
+					<input type="submit" value="Sign up">
+				</form>
+
+				<div class="form-btns">
+					<a href="javascript:void(0);" class="already-account"> Already Have An Account </a>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ========Menu====== -->
+		<p class="tu-noi" id="tu-noi"><strong> We are always ready to serve you with the best Quality! </strong></p>
+		<ul id="adaptive" class="cs-hidden">
+		  	<li class="item-a">
+			  	<div class="full-slider-box f-slide-1">
+					<div class="slider-text-container">
+					
+					<div class="f-slider-text-1">
+						<span> Limited Offer </span>
+						<strong> 30% Sale Off <br> With <font>Promo Code</font></strong>
+						<a href="#" class="f-slider-btn"> Buy now </a>
+					</div>
+					
+					</div>
+				</div>
+			</li>
+			<li class="item-a">
+			  	<div class="full-slider-box f-slide-2">
+					<div class="slider-text-container">
+					
+					<div class="f-slider-text-2">
+						<span> Special Meal </span>
+						<strong>For you<br>and<font> For your Family</font></strong>
+						<a href="#" class="f-slider-btn"> Buy now </a>
+					</div>
+					
+					</div>
+				</div>
+			</li>
+
+		</ul>
+  	
+	  	<div class="feature-heading" id="categories">
+	  		<h2> Featured Categories</h2>
+	  	</div>
+
+		<ul id="autoWidth" class="cs-hidden">
+		  	<li class="item">
+			  	<div class="feature-box">
+		  			<a href="#">
+		  			<img src="banh5.jpg">
+		  			</a>
+		  		</div>
+		  		<span> Sweet Food </span>
+		  	</li>
+		  	
+		  	<li class="item">
+			  	<div class="feature-box">
+		  			<a href="#">
+		  			<img src="banh3.jpg">
+		  			</a>
+		  		</div>
+		  		<span> Main Course </span>
+		  	</li>
+		  	
+		  	<li class="item">
+			  	<div class="feature-box">
+		  			<a href="#">
+		  			<img src="banh10.jpg">
+		  			</a>
+		  		</div>
+		  		<span> Fast Food </span>
+		  	</li>
+		</ul>
+
+		<section class="new-arrival" id="menu">
+			<div class="arrival-heading">
+				<strong> New Menu </strong>
+				<p>We Provide You Special Food With High Quality And Services</p>
+			</div>
+
+			<div class="product-container">
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh4.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Grilled Bun Cha </a>
+						<span class="p-price"> 40.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh5.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Banana bread </a>
+						<span class="p-price"> 20.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh6.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Spaghetti </a>
+						<span class="p-price"> 50.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh7.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Shrimpchips </a>
+						<span class="p-price"> 20.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh3.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Honey Popcorn Chicken </a>
+						<span class="p-price"> 60.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh8.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Creme Caramel </a>
+						<span class="p-price"> 10.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh9.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Sweet Caramel </a>
+						<span class="p-price"> 8.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh11.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Choux Cream </a>
+						<span class="p-price"> <strike>30.000VNĐ</strike> => 25.000VNĐ</span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh12.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name">Salted Egg Cake</a>
+						<span class="p-price"> <strike>40.000VNĐ</strike> => 34.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh13.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Chococrinkle </a>
+						<span class="p-price"> 35.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh22.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Banh Nhan </a>
+						<span class="p-price"> 25.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh20.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Chocolate Crepe</a>
+						<span class="p-price"> 40.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh19.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Cookies </a>
+						<span class="p-price"> 25.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh17.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Moon Cake </a>
+						<span class="p-price"> 20.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh18.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Coffee Bean Cookies </a>
+						<span class="p-price"> 30.000VNĐ </span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="sale">
+			<div class="sale-box">
+				<img src="banh12.jpg">
+				<a href="#" >
+					<div class="sale-text">
+						<strong>Salted Egg Cake <br>with unique homemade <br>flavor</strong>
+						<span> <strong> Sale off 15% <strong></span>
+					</div>
+				</a>
+			</div>
+
+			<div class="sale-box">
+				<img src="banh11.jpg">
+				<a href="#" >
+					<div class="sale-text">
+						<strong>Profiterole <br>with super delicious <br> crust recipe</strong>
+						<span> <strong> Sale off 15% <strong></span>
+					</div>
+				</a>
+			</div>
+
+		</section>
+
+		<section class="new-arrival" id="best">
+			<div class="arrival-heading">
+				<strong> Best-Seller </strong>
+				<p>WE AWLAYS BRING THE BEST PRODUCTS WITH THE MOST UNIQUE FLAVOR<br>WE ARE CONFIDENT TO CREATE THE MOST AMAZING FEELING FOR EATERS.</p>
+			</div>
+
+			<div class="product-container">
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh14.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Salted Egg New Version </a>
+						<span class="p-price"> 50.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh21.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Sweet Pumpkin Soup </a>
+						<span class="p-price"> 45.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh23.jpg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Sweet Langminton </a>
+						<span class="p-price"> 30.000VNĐ </span>
+					</div>
+				</div>
+
+				<div class="product-box">
+
+					<div class="product-img">
+						<a href="#" class="add-cart">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+						<img src="banh1.jpeg">
+					</div>
+
+					<div class="product-details">
+						<a href="#" class="p-name"> Matcha Cookies</a>
+						<span class="p-price"> 50.000VNĐ </span>
+					</div>
+				</div>
+
+				
+
+
+			</div>
+		</section>
+
+		<div class="banner-box f-slide-1">
+			<div class="banner-text-container">
+			
+			<div class="banner-text-1">
+				<span> Limited Offer </span>
+				<strong> 30% Sale Off <br> With <font>Promo Code</font></strong>
+				<a href="#" class="banner-btn"> Buy now </a>
+			</div>
+			
+			</div>
+		</div>
+
+		<section class="services" id="footer">
+			<div class="services-box">
+				<i class="fas fa-shipping-fast"></i>
+				<span> Free Shipping (Under 3km) </span>
+				<p>Free Shipping for All Oders in Cau Giay </p>
+			</div>
+
+			<div class="services-box">
+				<i class="fas fa-headphones-alt"></i>
+				<span> Support time 8:00am - 22:00pm </span>
+				<p>If you need help, please call us through the hotline </p>
+			</div>
+
+			<div class="services-box">
+				<i class="fas fa-sync"></i>
+				<span>100% Money Back </span>
+				<p>If the food is spoiled or went off </p>
+			</div>
+		</section>
+
+		<footer>
+			<span class="copyright">
+				Copyright 2021 <br>Created by Ngo Quang Duc &ensp;<br>
+				Website Owner : Minh Thu
+			</span>
+
+			<div class="subscribe">
+				<form>
+					<input type="email" placeholder="Example@gmail.com" required>
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+			<div class="social-call">
+				<div class ="social">
+					<a href="#" ><i class="fab fa-facebook-f"></i></a>
+					<a href="#" ><i class="fab fa-instagram"></i></a>
+					<a href="#" ><i class="fab fa-twitter"></i></a>
+				</div>
+				<div class ="phone">
+					<span> Hotline: +84 912 503 111 </span>
+				</div>
+			</div>
+
+		</footer>
+
+
+	  	
+
+
+
+
+
+
+
+		
+
+
+		
+
+		
+
+		
+		<script type="text/javascript">
+		// =========SEARCH BAR =========
+			$(document).on('click','.search',function(){
+				$('.search-bar').addClass('search-bar-active')
+			});
+
+			$(document).on('click','.search-cancel',function(){
+				$('.search-bar').removeClass('search-bar-active')
+			});
+
+			// =====LOGIN====
+			$(document).on('click','.user,.already-account',function(){
+				$('.form').addClass('login-active').removeClass('sign-up-active')
+			});
+
+			$(document).on('click','.sign-up-btn',function(){
+				$('.form').addClass('sign-up-active').removeClass('login-active')
+			});
+
+			$(document).on('click','.form-cancel',function(){
+				$('.form').removeClass('login-active').removeClass('sign-up-active')
+			});
+
+
+			// ====slide script =====
+			$(document).ready(function() {
+			$('#adaptive').lightSlider({
+			        adaptiveHeight:true,
+			        item:1,
+			        auto:true,
+			        slideMargin:0,
+			        loop:true
+			    });
+			});
+
+			 $(document).ready(function() {
+    			$('#autoWidth').lightSlider({
+	        		autoWidth:true,
+	        		loop:true,
+	        		onSliderLoad: function() {
+            			$('#autoWidth').removeClass('cS-hidden');
+        			} 
+    			});  
+  			});
+
+			 // =====menu-when-scroll======
+			$(window).scroll(function(){
+			 	if($(document).scrollTop() > 50 ){
+			 		$('.navigation').addClass('fix-nav');
+			 	}
+			 	else{
+			 		$('.navigation').removeClass('fix-nav');
+			 	}
+			})
+
+			// ===responsiv-menu====
+			$(window).ready(function(){
+				$('.toggle').click(function(){
+					$('.toggle').toggleClass('active')
+					$('.navigation').toggleClass('active')
+				})
+			})
+
+		</script>
+	</body>
+	</html>
