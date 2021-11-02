@@ -119,12 +119,9 @@ nav{
 	top: 100%;
 }
 
-.fa-shopping-cart{
-	position: absolute;
-}
 
 .num-cart-product{
-	position: absolute ;
+	position: fixed;
 	top: -17px;
 	right: -17px;
 	width: 25px;
@@ -574,13 +571,14 @@ nav{
 	background-color: #0b9d8a;
 	box-shadow:2px 2px 30px rgba(0,0,0,0.1);
 	display: none;
-	animation: fade 0.6s;
+	animation: fade 0.6s;ca
 }	
 
 .add-cart:hover{
 	background-color: #f76b6a;
 	transition: all ease 0.3s;
 }
+
 
 .product-box:hover .add-cart{
 	display: flex;
