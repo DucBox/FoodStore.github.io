@@ -7,9 +7,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<link rel="stylesheet" type="text/css" href="shopping_web.css"/>
 		<link rel="stylesheet" type="text/css" href="lightslider.css"/>
-		<script src="Jquery.js"></script>
-		<script src="lightslider.js"></script>
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript" src="lightslider.js"></script>
 		<link rel="stylesheet" href ="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+		<link rel="stylesheet" href ="responsive_slider.css">
+		
+		<!-- <script type="text/javascript" src="responsive_slider.js"></script> -->
 	</head>
 	<body>
 		<!-- ========Navigation====== -->
@@ -146,10 +149,26 @@
 		  	<li class="item">
 			  	<div class="feature-box">
 		  			<a href="#">
-		  			<img src="banh5.jpg">
+		  			<img src="banh8.jpg">
 		  			</a>
 		  		</div>
 		  		<span> Sweet Food </span>
+		  	</li>
+		  	<li class="item">
+			  	<div class="feature-box">
+		  			<a href="#">
+		  			<img src="banh16.jpg">
+		  			</a>
+		  		</div>
+		  		<span> Main Course </span>
+		  	</li>
+		  	<li class="item">
+			  	<div class="feature-box">
+		  			<a href="#">
+		  			<img src="banh18.jpg">
+		  			</a>
+		  		</div>
+		  		<span> Fast Food </span>
 		  	</li>
 		  	
 		  	<li class="item">
@@ -170,6 +189,7 @@
 		  		<span> Fast Food </span>
 		  	</li>
 		</ul>
+		
 
 		<section class="new-arrival" id="menu">
 			<div class="arrival-heading">
@@ -615,7 +635,10 @@
 			 $(document).ready(function() {
     			$('#autoWidth').lightSlider({
 	        		autoWidth:true,
+	        		item:1,
 	        		loop:true,
+	        		auto:true,
+	        		slideMargin:0,
 	        		onSliderLoad: function() {
             			$('#autoWidth').removeClass('cS-hidden');
         			} 
