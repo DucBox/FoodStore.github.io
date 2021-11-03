@@ -11,12 +11,13 @@
     --first-color-lighter: hsl(var(--hue-color),92%,85%);
     --title-color: hsl(var(--hue-color),8%,15%);
     --text-color: hsl(var(--hue-color),8%,45%);
-    --text-color-light: hsl(var(--hue-color),8%,65%);
+    --text-color-light: white;
     --input-color: black;
     --body-color: hsl(var(--hue-color),60%,99%);
     --container-color: #FFF ;
     --scroll-bar-color: hsl(var(--hue-color),12%,90%);
 	--scroll-thumb-color: hsl(var(--hue-color),12%,80%); 
+	--red:#ff3838;
 }
 body{
 	margin: 0px;
@@ -27,6 +28,8 @@ body{
 
 *{
 	box-sizing: border-box;
+  text-transform: capitalize;
+  transition:all .2s linear;
 }
 
 ul{
@@ -828,7 +831,7 @@ footer{
 		display: block;
 	}
 
-	
+
 	.full-slider-box,
 	.banner-box{
 		height: 45vh;
@@ -1008,3 +1011,74 @@ body.dark-theme{
     --input-color: red;
     --body-color: hsl(var(--hue-color),28%,12%);
     --container-color: hsl(var(--hue-color),29%,16%);
+    --text-color-light: black;
+}
+
+
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  color:#666;
+}
+
+.heading span{
+  color:var(--red);
+}
+
+.speciality .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.speciality .box-container .box{
+  flex:1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.speciality .box-container .box .image{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  position: absolute;
+  top:-100%; left:0;
+}
+
+.speciality .box-container .box .content{
+  text-align: center;
+  background:var(--text-color-light);
+  padding:2rem;
+}
+
+.speciality .box-container .box .content img{
+  margin:1.5rem 0;
+}
+
+.speciality .box-container .box .content h3{
+  font-size: 2.5rem;
+  color:var(--input-color);
+}
+
+.speciality .box-container .box .content p{
+  font-size: 1.6rem;
+  color:var(--title-color);
+  padding:1rem 0;
+}
+
+.speciality .box-container .box:hover .image{
+  top:0;
+}
+
+.speciality .box-container .box:hover .content{
+  transform: translateY(100%);
+}
+
+section{
+  padding:2rem 9%;
+}
