@@ -701,7 +701,11 @@
 
 		
 
-		
+		<div class="loader-container">
+    		<img src="loader.gif" alt="">
+		</div>
+
+	
 
 		
 		<script type="text/javascript">
@@ -790,6 +794,16 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', getCurrentTheme())
 	localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+	function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+  setInterval(loader, 2000);
+}
+
+window.onload = fadeOut();
 
 
 		</script>
