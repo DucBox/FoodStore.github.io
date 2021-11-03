@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root{
     --header-height: 3rem ;
     /*========== Colors ==========*/
@@ -19,6 +20,29 @@
 	--scroll-thumb-color: hsl(var(--hue-color),12%,80%); 
 	--red:#ff3838;
 }
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:5; padding:5;
+  box-sizing: border-box;
+ /* outline: none; border:none;
+  text-decoration: none;*/
+  text-transform: capitalize;
+  transition:all .2s linear;
+}
+
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
 body{
 	margin: 0px;
 	padding: 0px;
@@ -61,13 +85,13 @@ nav{
 .social a{
 	margin: 0 5px;
 	color: var(--text-color);
-	font-size: 1.7rem;
+	font-size: 4rem;
 }
 
 .phone{
 	margin-left: 30px;
 	color: var(--text-color);
-	font-size: 1.8rem;
+	font-size: 4rem;
 }
 
 .social a:hover{
@@ -99,11 +123,16 @@ nav{
 
 .menu li a{
 	color: red;
+	font-size: 2rem;
+}
+
+.p-name{
+	font-size: 2rem;
 }
 
 .right-menu a{
 	margin: 0 10px;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	color: red;
 }
 
@@ -124,7 +153,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.7rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	top: -20px;
 	right: -20px;
@@ -189,7 +218,7 @@ nav{
 	padding: 30px;
 	border: none;
 	outline: none;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin: 20px;
 	padding: 0 20px;
 	animation: search 0.3s;
@@ -197,7 +226,7 @@ nav{
 
 .search-cancel{
 	color: brown;
-	font-size: 2rem;
+	font-size: 3rem;
 	padding: 40px;
 }
 
@@ -258,7 +287,7 @@ nav{
 .login-form strong,
 .sign-up-form strong{
 	color: #272727;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin: 2px 7px 7px 7px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -306,7 +335,7 @@ nav{
 
 .form-btns a{
 	color: #4d4d4d;
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 }
 .sign-up-btn{
 	border-bottom: 1px solid #868686;
@@ -385,7 +414,7 @@ nav{
 .f-slider-text-1 strong,
 .banner-text-1 strong{
 	color: #333333;
-	font-size: 3rem;
+	font-size: 5rem;
 	line-height: 55px;
 	margin-top: 10px;
 	letter-spacing: 1px;
@@ -396,7 +425,7 @@ nav{
 	text-transform: uppercase;
 	letter-spacing: 6px;
 	font-weight: 500;
-	font-size: 1.6rem;
+	font-size: 3.5rem;
 	color: red;
 }
 
@@ -426,7 +455,7 @@ nav{
 
 .f-slider-text-2 strong{
 	color: yellow;
-	font-size: 3rem;
+	font-size: 5rem;
 	line-height: 55px;
 	margin-top: 10px;
 	letter-spacing: 1px;
@@ -436,7 +465,7 @@ nav{
 	text-transform: uppercase;
 	letter-spacing: 6px;
 	font-weight: 500;
-	font-size: 1.6rem;
+	font-size: 3.5rem;
 	color: yellow;
 }
 
@@ -448,7 +477,7 @@ nav{
 .tu-noi{
 	color: var(--text-color);
 	text-align: center;
-	font-size: 27px;
+	font-size: 35px;
 }
 
 .feature-heading{
@@ -460,7 +489,7 @@ nav{
 
 .feature-heading h2,
 .arrival-heading strong{
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	color: black;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -468,6 +497,10 @@ nav{
 	margin-top: 40px;
 	padding: 5px 30px;
 	border: 1px solid #e0e0e0;
+}
+
+.arrival-heading p{
+	text-align: center;
 }
 
 .feature-box{
@@ -486,10 +519,10 @@ nav{
 }
 
 .item span{
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: 600;
 	margin: 5px;
-	color: var(--text-color);
+	color: var(--body-color);
 }
 
 .item{
@@ -521,7 +554,7 @@ nav{
 .arrival-heading p{
 	color: #808080;
 	margin: 10px;
-	font-size: 0.9rem;
+	font-size: 1.8rem;
 }
 
 .product-container{
@@ -578,7 +611,7 @@ nav{
 }
 
 .p-price{
-	font-size: 1.2rem;
+	font-size: 2rem;
 	font-weight: 400;
 	color: #333333;
 }
@@ -660,7 +693,7 @@ nav{
 }
 
 .sale-text strong{
-	font-size: 1.25rem;
+	font-size: 2rem;
 	font-weight: 500;
 	width: 80%;
 	line-height: 23px;
@@ -695,12 +728,12 @@ nav{
 
 .services-box i{
 	color: #0b9d8a;
-	font-size: 2rem;
+	font-size: 3.2rem;
 	margin: 15px;
 }
 
 .services-box span{
-	font-size: 1rem;
+	font-size: 2.2rem;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	color: var(--text-color);
@@ -708,7 +741,7 @@ nav{
 
 .services-box p{
 	margin: 0;
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 	color: var(--text-color);
 }
 
@@ -717,13 +750,13 @@ footer{
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	border-top: 1px solid black;
+	border-top: 1px solid var(--text-color);
 	flex-wrap: wrap;
 	margin-top: 20px;
 }	
 
 .copyright{
-	font-size:1rem;
+	font-size:1.7rem;
 	color: var(--text-color);
 	letter-spacing: 1px;
 	text-align: center;
@@ -806,25 +839,25 @@ footer{
 	}
 	.toggle{
 		display: block;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		align-items: center;
 		left: -20px;
 		color: red;
 	}
 
 	.toggle :hover{
-		font-size: 2rem;
+		font-size: 2.55rem;
 	}
 
 	.toggle i{
-		font-size: 1.5rem;
+		font-size: 2rem;
 		align-items: center;
 		left: -20px;
 		color: red;
 	}
 
 	.toggle i:hover{
-		font-size: 2rem;
+		font-size: 2.7rem;
 	}
 
 	.navigation.active .menu{
@@ -839,19 +872,19 @@ footer{
 
 	.f-slider-text-1 span,
 	.banner-text-1 span{
-		font-size: 0.9rem;
+		font-size: 1.5rem;
 	}
 	.f-slider-text-2 span{
-		font-size: 0.9rem;
+		font-size: 1.5rem;
 	}
 
 	.f-slider-text-1 strong,
 	.banner-text-1 strong{
-		font-size: 2rem;
+		font-size: 3rem;
 		line-height: 40px;
 	}
 	.f-slider-text-2 strong{
-		font-size: 2rem;
+		font-size: 3rem;
 		line-height: 40px;
 	}
 
@@ -861,7 +894,7 @@ footer{
 
 	.search-input input,
 	.search-cancel{
-		font-size: 1.4rem;
+		font-size: 2rem;
 	}
 
 	.sale-box{
@@ -877,7 +910,7 @@ footer{
 
 
 .item span{
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	margin: 5px;
 	color: #444444;
@@ -899,11 +932,11 @@ footer{
 
 	.f-slider-text-1 strong,
 	.banner-text-1 strong{
-		font-size: 1.2rem;
+		font-size: 2rem;
 		line-height: 25px;
 	}
 	.f-slider-text-2 strong{
-		font-size: 1.2rem;
+		font-size: 2rem;
 		line-height: 25px;
 	}
 
@@ -914,22 +947,22 @@ footer{
 
 	.f-slider-text-1 span,
 	.banner-text-1 span{
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 		
 	}
 	.f-slider-text-2 span{
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 	}
 	.f-slider-btn,
 	.banner-btn{
 		width: 120px;
 		height: 30px;
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 
 	}
 
 	.feature-heading h2{
-		font-size: 1.2rem;
+		font-size: 2rem;
 	}
 	.feature-box{
 		width: 80px;
@@ -937,11 +970,11 @@ footer{
 	}
 	.new-arrival strong,
 	.feature-heading strong{
-		font-size: 1.2rem;
+		font-size: 2rem;
 	}
 	.new-arrival p,
 	.feature-heading p{
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 		text-align: center;
 	}
 
@@ -1017,14 +1050,18 @@ body.dark-theme{
 
 .heading{
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   padding:1rem;
   color:#666;
 }
 
+h3{
+	text-color: var(--text-color);
+}
 .heading span{
   color:var(--red);
 }
+
 
 .speciality .box-container{
   display: flex;
@@ -1081,4 +1118,34 @@ body.dark-theme{
 
 section{
   padding:2rem 9%;
+}
+
+.box{
+	width: 50%;
+	height: 50%;
+}
+
+.steps{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  padding:1rem;
+}
+
+.steps .box{
+  flex:1 1 25rem;
+  padding:1rem;
+  text-align: center;
+}
+
+.steps .box img{
+  border-radius: 50%;
+  border:1rem solid #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.steps .box h3{
+  font-size: 3rem;
+  color:var(--text-color);
+  padding:1rem;
 }
