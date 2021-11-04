@@ -51,6 +51,7 @@ body{
 	padding: 0px;
 	font-family: poppins;
 	background-color: var(--body-color);
+
 }
 
 *{
@@ -796,125 +797,7 @@ footer{
 	display: none;
 }
 
-@media(max-width: 1010px){
-	nav{
-		position: relative;
-	}
-	.navigation{
-		height: 80px;
-	}
-	.fix-nav{
-		height: 80px;
-	}
-	.menu{
-		position: absolute;
-		top: 110px;
-		left: 0;
-		background-color: #ffffff;
-		border-bottom: 4px solid #0b9d8a;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		z-index: 102;
-		flex-direction: column;
-		display: none;
-	}
-	.fix-nav .menu{
-		top: 80px ;
-	}
 
-	.menu li{
-		width: 100%;
-		padding: 0;
-		margin: 0;
-	}
-
-	.navigation .menu li a{
-		width: 100%;
-		height: 50px;
-		display: flex;
-		align-items: center;
-		margin: 0;
-		padding: 25px;
-		border: 1px solid rgba(0,0,0,0.05);
-	}
-
-	.sale-label{
-		display: none ;
-	}
-	.toggle{
-		display: block;
-		font-size: 2rem;
-		align-items: center;
-		left: -20px;
-		color: red;
-	}
-
-	.toggle :hover{
-		font-size: 2.55rem;
-	}
-
-	.toggle i{
-		font-size: 2rem;
-		align-items: center;
-		left: -20px;
-		color: red;
-	}
-
-	.toggle i:hover{
-		font-size: 2.7rem;
-	}
-
-	.navigation.active .menu{
-		display: block;
-	}
-
-
-	.full-slider-box,
-	.banner-box{
-		height: 45vh;
-	}
-
-	.f-slider-text-1 span,
-	.banner-text-1 span{
-		font-size: 2.5rem;
-	}
-	.f-slider-text-2 span{
-		font-size: 2.5rem;
-	}
-
-	.f-slider-text-1 strong,
-	.banner-text-1 strong{
-		font-size: 5rem;
-		line-height: 40px;
-	}
-	.f-slider-text-2 strong{
-		font-size: 5rem;
-		line-height: 40px;
-	}
-	.f-slider-btn{
-		font-size: 1.8rem;
-		font-weight: 600;
-	}
-	.search-input{
-		height: 60px;
-	}
-
-	.search-input input,
-	.search-cancel{
-		font-size: 2rem;
-	}
-
-	.sale-box{
-		height: 200px;
-	}
-	.feature-box{
-	height: 155px;
-	width: 155px;
-	margin: 0 20px;
-	border-radius: 10px;
-	overflow: hidden;
-}
 
 
 .item span{
@@ -1027,6 +910,8 @@ footer{
 	.sign-up-form{
 		width: 90%;
 	}
+
+
 
 }
 
@@ -1206,7 +1091,7 @@ section{
 
 .about .content span {
   font-family: 'Satisfy', cursive;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #27ae60;
 }
 
@@ -1219,7 +1104,7 @@ section{
 .about .content p {
   padding: 1rem 0;
   line-height: 2;
-  font-size: 1.5rem;
+  font-size: 2`.5rem;
   color: var(--input-color);
 }
 
@@ -1590,4 +1475,252 @@ section{
   font-size: 1.5rem;
   color: #666;
   text-decoration: line-through;
+}
+
+.container{
+	position: relative;
+	perspective: 1000px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+}
+
+
+.container .slide-container .slide{
+	border-radius: 5px;
+	background: skyblue;
+	box-shadow: 0 5px 10px var(--input-color);
+	width: 600px;
+	padding: 20px;
+	margin: 10px;
+	position: relative;
+	transform-style: preserve-3d;
+	height: 300px;
+	animation: slide .4s linear;
+}
+
+.container .slide-container .slide p{
+	font-size: 20px;
+}
+
+.container .slide-container .slide > *{
+	animation: slideContent .2s linear .4s backwards;
+}
+@keyframes slide{
+	0%{
+		transform: rotateX(180deg);
+	}
+}
+
+@keyframes slideContent{
+	0%{
+		opacity: 0;
+		transform: scale(.5);
+	}
+}
+
+.container .slide-container .slide .icon{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 90px;
+	color: #3498db;
+}
+.container .slide-container .use{
+	display: flex;
+	align-items: center;
+} 
+
+.container .slide-container .slide img{
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	object-fit: cover;
+	margin-right: 10px;
+
+}
+
+.container .slide-container .use-info h3{
+	color: var(--text-color-light);
+	font-size: 30px;
+}
+.container .slide-container .use-info .stars i{
+	color: var(--star-color);
+	font-size: 25px;
+}
+
+.container .slide-container .use-info span{
+	color: var(--first-color-second);
+	font-size: 20px;
+	padding-top: 15px;
+	font-size: satisfy;
+}
+
+.container .slide-container{
+	display: none;
+}
+
+.container .slide-container.active{
+	display: block;
+}
+
+.container #prev,
+.container #next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px ;
+	background: skyblue;
+	color: #333;
+	cursor: poiner;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px #3337;
+}
+
+.container #prev{
+	left: 150px;
+}
+
+.container #next{
+	right: 150px;
+}
+
+.container #prev:hover,
+.container #next:hover{
+	background: red;
+	color: #fff;
+}
+
+@media(max-width: 1010px){
+	nav{
+		position: relative;
+	}
+	.navigation{
+		height: 80px;
+	}
+	.fix-nav{
+		height: 80px;
+	}
+	.menu{
+		position: absolute;
+		top: 110px;
+		left: 0;
+		background-color: #ffffff;
+		border-bottom: 4px solid #0b9d8a;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		z-index: 102;
+		flex-direction: column;
+		display: none;
+	}
+	.fix-nav .menu{
+		top: 80px ;
+	}
+
+	.menu li{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navigation .menu li a{
+		width: 100%;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 25px;
+		border: 1px solid rgba(0,0,0,0.05);
+	}
+
+	.sale-label{
+		display: none ;
+	}
+	.toggle{
+		display: block;
+		font-size: 2rem;
+		align-items: center;
+		left: -20px;
+		color: red;
+	}
+
+	.toggle :hover{
+		font-size: 2.55rem;
+	}
+
+	.toggle i{
+		font-size: 2rem;
+		align-items: center;
+		left: -20px;
+		color: red;
+	}
+
+	.toggle i:hover{
+		font-size: 2.7rem;
+	}
+
+	.navigation.active .menu{
+		display: block;
+	}
+
+
+	.full-slider-box,
+	.banner-box{
+		height: 45vh;
+	}
+
+	.f-slider-text-1 span,
+	.banner-text-1 span{
+		font-size: 2.5rem;
+	}
+	.f-slider-text-2 span{
+		font-size: 2.5rem;
+	}
+
+	.f-slider-text-1 strong,
+	.banner-text-1 strong{
+		font-size: 5rem;
+		line-height: 40px;
+	}
+	.f-slider-text-2 strong{
+		font-size: 5rem;
+		line-height: 40px;
+	}
+	.f-slider-btn{
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+	.search-input{
+		height: 60px;
+	}
+
+	.search-input input,
+	.search-cancel{
+		font-size: 2rem;
+	}
+
+	.sale-box{
+		height: 200px;
+	}
+	.feature-box{
+	height: 155px;
+	width: 155px;
+	margin: 0 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	}
+	
+	.container #prev{
+	left: 100px;
+	}
+
+	.container #next{
+	right: 100px;
+	}
 }

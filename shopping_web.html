@@ -157,7 +157,7 @@
 		    <div class="content">
 		        <span>why choose us?</span>
 		        <h3 class="title">what's make our food delicious!</h3>
-		        <p>All dishes at our store are made from own recipes with fresh and high quality ingredients. The harmonious combination of colors and flavors will bring users the most new and wonderful feelings.</p>
+		        <p>All dishes at our store are made from own recipes with fresh and high quality ingredients.</p>
 		        <a href="#" class="btn">read more</a>
 		        <div class="icons-container">
 		            <div class="icons">
@@ -978,6 +978,95 @@
 
 </section>
 
+
+	<div class="container">
+		<div class="slide-container active">
+			<div class="slide">
+				<i class="fas fa-quote-right icon"></i>
+				<div class="use">
+					<img src="Mypic.jpg" alt="">
+					<div class="use-info">
+						<h3> Quang Duc </h3>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+				<p class="text"> I will never forget the taste of this cake. I love this.</p>
+			</div>
+		</div>
+		<div class="slide-container">
+			<div class="slide">
+				<i class="fas fa-quote-right icon"></i>
+				<div class="use">
+					<img src="td2-min.png" alt="">
+					<div class="use-info">
+						<h3> Thanh Dao </h3>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+				<p class="text"> What an indescribable taste. It was great.</p>
+			</div>
+		</div>
+		<div class="slide-container">
+			<div class="slide">
+				<i class="fas fa-quote-right icon"></i>
+				<div class="use">
+					<img src="s-3.png" alt="">
+					<div class="use-info">
+						<h3> Thanh Dao </h3>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+				<p class="text"> SDFNAFDIFBFKHDFHabcdscjdjnasjfnsdfnsfdkvnkjfnsdfkdsfbknfdsuf</p>
+			</div>
+		</div>
+		<div class="slide-container">
+			<div class="slide">
+				<i class="fas fa-quote-right icon"></i>
+				<div class="use">
+					<img src="s-2.png" alt="">
+					<div class="use-info">
+						<h3> Thanh Dao </h3>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+				<p class="text"> SDFNAFDIFBFKHDFHabcdscjdjnasjfnsdfnsfdkvnkjfnsdfkdsfbknfdsuf</p>
+			</div>
+		</div>
+		<div id ="next" class="fas fa-chevron-right" onclick = "next()"></div>
+		<div id ="prev" class="fas fa-chevron-left" onclick = "prev()"></div>
+	</div>
+
+
+
+
+
+
+
+
 		<footer>
 
 			<div class="social-call">
@@ -1111,6 +1200,21 @@ function fadeOut(){
 }
 
 window.onload = fadeOut();
+
+			let slides = document.querySelectorAll('.slide-container');
+			let index=0;
+
+			function next(){
+				slides[index].classList.remove('active');
+				index = (index+1) % slides.length;
+				slides[index].classList.add('active');
+			}
+
+			function prev(){
+				slides[index].classList.remove('active');
+				index = (index-1+slides.length) % slides.length;
+				slides[index].classList.add('active');
+			}
 
 
 		</script>
