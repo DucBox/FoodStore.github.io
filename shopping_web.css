@@ -49,7 +49,7 @@ html{
 body{
 	margin: 0px;
 	padding: 0px;
-	font-family: poppins;
+	font-family: satisfy;
 	background-color: var(--body-color);
 
 }
@@ -72,6 +72,12 @@ nav{
 	width: 100%;
 	z-index: 100;
 	box-shadow: 2px 2px 30px var(--input-color);
+}
+
+h1{
+	color: var(--title-color);
+	text-align: center;
+	font-size: 40px;
 }
 
 #categories h2{
@@ -493,19 +499,22 @@ nav{
 }
 
 .feature-heading h2,
-.arrival-heading strong{
-	font-size: 2.5rem;
-	color: black;
+.arrival-heading h2{
+	font-size: 4.5rem;
+	color: red;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: 600px;
-	margin-top: 40px;
-	padding: 5px 30px;
-	border: 1px solid #e0e0e0;
+	/*margin-top: 40px;*/
+	/*padding: 5px 30px;*/
+	/*border: 1px solid #e0e0e0;*/
+	text-align: center;
 }
 
-.arrival-heading p{
+.arrival-heading h2 p{
 	text-align: center;
+	color: red;
+	font-size: 3rem;
 }
 
 .feature-box{
@@ -523,11 +532,11 @@ nav{
 	object-position: cover;
 }
 
-.item span{
-	font-size: 2rem;
+#autoWidth .item span{
+	font-size: 2.5rem;
 	font-weight: 600;
 	margin: 5px;
-	color: var(--body-color);
+	color: red;
 }
 
 
@@ -865,8 +874,9 @@ footer{
 	}
 	.new-arrival p,
 	.feature-heading p{
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-align: center;
+		font-size: satisfy;
 	}
 
 	.sale-box{
@@ -1500,6 +1510,10 @@ section{
 	animation: slide .4s linear;
 }
 
+.container .slide-container .slide:hover{
+	background: pink;
+}
+
 .container .slide-container .slide p{
 	font-size: 20px;
 }
@@ -1533,8 +1547,8 @@ section{
 } 
 
 .container .slide-container .slide img{
-	height: 100px;
-	width: 100px;
+	height: 140px;
+	width: 140px;
 	border-radius: 5px;
 	object-fit: cover;
 	margin-right: 10px;
