@@ -1794,3 +1794,8 @@ section{
   width: 100%;
   border-radius: .5rem;
 }
+
+
+.new-arrival .product-container .product-box .product-img a i{
+	font-size: 3rem;
+}
